@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F66849B26A171E1003C228C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F66849A26A171E1003C228C /* AppDelegate.swift */; };
+		5F66849D26A171E1003C228C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F66849C26A171E1003C228C /* SceneDelegate.swift */; };
+		5F6684A226A171E1003C228C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6684A026A171E1003C228C /* Main.storyboard */; };
+		5F6684A426A171E4003C228C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6684A326A171E4003C228C /* Assets.xcassets */; };
+		5F6684A726A171E4003C228C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6684A526A171E4003C228C /* LaunchScreen.storyboard */; };
+		5F6684AF26A184BA003C228C /* RideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6684AE26A184BA003C228C /* RideView.swift */; };
+		5F6684B226A18733003C228C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5F6684B126A18733003C228C /* Alamofire */; };
+		5F6684B726A19062003C228C /* RideAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6684B626A19062003C228C /* RideAPI.swift */; };
+		5F6684B926A196EA003C228C /* RideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6684B826A196EA003C228C /* RideModel.swift */; };
+		5F6684BC26A1995F003C228C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5F6684BB26A1995F003C228C /* Kingfisher */; };
+		5F6684BE26A19F40003C228C /* RideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6684BD26A19F40003C228C /* RideCell.swift */; };
+		5F6684C026A1F800003C228C /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6684BF26A1F800003C228C /* CustomAnnotation.swift */; };
+		5F6684C226A34337003C228C /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6684C126A34337003C228C /* CustomAnnotationView.swift */; };
+		5F6684C626A3FB4B003C228C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6684C526A3FB4B003C228C /* NetworkManager.swift */; };
+		5F6684C826A3FBE9003C228C /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6684C726A3FBE9003C228C /* EventMonitor.swift */; };
+		5F6684CA26A3FBF0003C228C /* NetworkManager+RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6684C926A3FBF0003C228C /* NetworkManager+RequestInterceptor.swift */; };
+		5F6684CD26A408F6003C228C /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 5F6684CC26A408F6003C228C /* NVActivityIndicatorView */; };
+		5F6684CF26A408F6003C228C /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = 5F6684CE26A408F6003C228C /* NVActivityIndicatorViewExtended */; };
+		5F6684D926A417ED003C228C /* TableDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6684D826A417ED003C228C /* TableDetailVC.swift */; };
+		5F6684DB26A4572B003C228C /* RidesListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6684DA26A4572B003C228C /* RidesListTableView.swift */; };
+		5F6684DD26A45750003C228C /* RidesMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6684DC26A45750003C228C /* RidesMapView.swift */; };
+		5F6684EB26A47A86003C228C /* SIXT_RideShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6684EA26A47A86003C228C /* SIXT_RideShareUITests.swift */; };
+		5F6684F326A47DA9003C228C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5F6684F226A47DA9003C228C /* README.md */; };
+		5F6684F526A4848C003C228C /* extractAnnotationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6684F426A4848C003C228C /* extractAnnotationsViewModel.swift */; };
+		5F6684FD26A486F4003C228C /* SIXT_RideShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6684FC26A486F4003C228C /* SIXT_RideShareTests.swift */; };
+		5F66850526A48985003C228C /* Rides.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F66850426A48985003C228C /* Rides.json */; };
+		5F66850626A48C19003C228C /* Rides.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F66850426A48985003C228C /* Rides.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F6684ED26A47A86003C228C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F66848F26A171E1003C228C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F66849626A171E1003C228C;
+			remoteInfo = SIXT_RideShare;
+		};
+		5F6684FF26A486F4003C228C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F66848F26A171E1003C228C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F66849626A171E1003C228C;
+			remoteInfo = SIXT_RideShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F66849726A171E1003C228C /* SIXT_RideShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIXT_RideShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F66849A26A171E1003C228C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F66849C26A171E1003C228C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5F6684A126A171E1003C228C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F6684A326A171E4003C228C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F6684A626A171E4003C228C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F6684A826A171E4003C228C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F6684AE26A184BA003C228C /* RideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideView.swift; sourceTree = "<group>"; };
+		5F6684B626A19062003C228C /* RideAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideAPI.swift; sourceTree = "<group>"; };
+		5F6684B826A196EA003C228C /* RideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideModel.swift; sourceTree = "<group>"; };
+		5F6684BD26A19F40003C228C /* RideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCell.swift; sourceTree = "<group>"; };
+		5F6684BF26A1F800003C228C /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		5F6684C126A34337003C228C /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		5F6684C526A3FB4B003C228C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5F6684C726A3FBE9003C228C /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		5F6684C926A3FBF0003C228C /* NetworkManager+RequestInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkManager+RequestInterceptor.swift"; sourceTree = "<group>"; };
+		5F6684D826A417ED003C228C /* TableDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDetailVC.swift; sourceTree = "<group>"; };
+		5F6684DA26A4572B003C228C /* RidesListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesListTableView.swift; sourceTree = "<group>"; };
+		5F6684DC26A45750003C228C /* RidesMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesMapView.swift; sourceTree = "<group>"; };
+		5F6684E826A47A85003C228C /* SIXT_RideShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SIXT_RideShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6684EA26A47A86003C228C /* SIXT_RideShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIXT_RideShareUITests.swift; sourceTree = "<group>"; };
+		5F6684EC26A47A86003C228C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F6684F226A47DA9003C228C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5F6684F426A4848C003C228C /* extractAnnotationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extractAnnotationsViewModel.swift; sourceTree = "<group>"; };
+		5F6684FA26A486F4003C228C /* SIXT_RideShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SIXT_RideShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6684FC26A486F4003C228C /* SIXT_RideShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIXT_RideShareTests.swift; sourceTree = "<group>"; };
+		5F6684FE26A486F4003C228C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F66850426A48985003C228C /* Rides.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Rides.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F66849426A171E1003C228C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6684CD26A408F6003C228C /* NVActivityIndicatorView in Frameworks */,
+				5F6684BC26A1995F003C228C /* Kingfisher in Frameworks */,
+				5F6684B226A18733003C228C /* Alamofire in Frameworks */,
+				5F6684CF26A408F6003C228C /* NVActivityIndicatorViewExtended in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6684E526A47A85003C228C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6684F726A486F4003C228C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F66848E26A171E1003C228C = {
+			isa = PBXGroup;
+			children = (
+				5F6684F226A47DA9003C228C /* README.md */,
+				5F66849926A171E1003C228C /* SIXT_RideShare */,
+				5F6684E926A47A86003C228C /* SIXT_RideShareUITests */,
+				5F6684FB26A486F4003C228C /* SIXT_RideShareTests */,
+				5F66849826A171E1003C228C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F66849826A171E1003C228C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F66849726A171E1003C228C /* SIXT_RideShare.app */,
+				5F6684E826A47A85003C228C /* SIXT_RideShareUITests.xctest */,
+				5F6684FA26A486F4003C228C /* SIXT_RideShareTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F66849926A171E1003C228C /* SIXT_RideShare */ = {
+			isa = PBXGroup;
+			children = (
+				5F66849A26A171E1003C228C /* AppDelegate.swift */,
+				5F66849C26A171E1003C228C /* SceneDelegate.swift */,
+				5F6684A026A171E1003C228C /* Main.storyboard */,
+				5F6684D126A40AA2003C228C /* View */,
+				5F6684D326A40AC8003C228C /* Model */,
+				5F6684D026A40A8D003C228C /* NetworkManager */,
+				5F6684D226A40AB4003C228C /* CustomAnnotation */,
+				5F6684A326A171E4003C228C /* Assets.xcassets */,
+				5F6684A526A171E4003C228C /* LaunchScreen.storyboard */,
+				5F6684A826A171E4003C228C /* Info.plist */,
+			);
+			path = SIXT_RideShare;
+			sourceTree = "<group>";
+		};
+		5F6684D026A40A8D003C228C /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				5F6684C526A3FB4B003C228C /* NetworkManager.swift */,
+				5F6684C926A3FBF0003C228C /* NetworkManager+RequestInterceptor.swift */,
+				5F6684C726A3FBE9003C228C /* EventMonitor.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		5F6684D126A40AA2003C228C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F6684DE26A4578E003C228C /* RidesTableView */,
+				5F6684AE26A184BA003C228C /* RideView.swift */,
+				5F6684DC26A45750003C228C /* RidesMapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F6684D226A40AB4003C228C /* CustomAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				5F6684C126A34337003C228C /* CustomAnnotationView.swift */,
+				5F6684BF26A1F800003C228C /* CustomAnnotation.swift */,
+			);
+			path = CustomAnnotation;
+			sourceTree = "<group>";
+		};
+		5F6684D326A40AC8003C228C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F6684B626A19062003C228C /* RideAPI.swift */,
+				5F6684F426A4848C003C228C /* extractAnnotationsViewModel.swift */,
+				5F6684B826A196EA003C228C /* RideModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F6684DE26A4578E003C228C /* RidesTableView */ = {
+			isa = PBXGroup;
+			children = (
+				5F6684BD26A19F40003C228C /* RideCell.swift */,
+				5F6684DA26A4572B003C228C /* RidesListTableView.swift */,
+				5F6684D826A417ED003C228C /* TableDetailVC.swift */,
+			);
+			path = RidesTableView;
+			sourceTree = "<group>";
+		};
+		5F6684E926A47A86003C228C /* SIXT_RideShareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F6684EA26A47A86003C228C /* SIXT_RideShareUITests.swift */,
+				5F6684EC26A47A86003C228C /* Info.plist */,
+			);
+			path = SIXT_RideShareUITests;
+			sourceTree = "<group>";
+		};
+		5F6684FB26A486F4003C228C /* SIXT_RideShareTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F66850426A48985003C228C /* Rides.json */,
+				5F6684FC26A486F4003C228C /* SIXT_RideShareTests.swift */,
+				5F6684FE26A486F4003C228C /* Info.plist */,
+			);
+			path = SIXT_RideShareTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F66849626A171E1003C228C /* SIXT_RideShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F6684AB26A171E4003C228C /* Build configuration list for PBXNativeTarget "SIXT_RideShare" */;
+			buildPhases = (
+				5F66849326A171E1003C228C /* Sources */,
+				5F66849426A171E1003C228C /* Frameworks */,
+				5F66849526A171E1003C228C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SIXT_RideShare;
+			packageProductDependencies = (
+				5F6684B126A18733003C228C /* Alamofire */,
+				5F6684BB26A1995F003C228C /* Kingfisher */,
+				5F6684CC26A408F6003C228C /* NVActivityIndicatorView */,
+				5F6684CE26A408F6003C228C /* NVActivityIndicatorViewExtended */,
+			);
+			productName = SIXT_RideShare;
+			productReference = 5F66849726A171E1003C228C /* SIXT_RideShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F6684E726A47A85003C228C /* SIXT_RideShareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F6684EF26A47A86003C228C /* Build configuration list for PBXNativeTarget "SIXT_RideShareUITests" */;
+			buildPhases = (
+				5F6684E426A47A85003C228C /* Sources */,
+				5F6684E526A47A85003C228C /* Frameworks */,
+				5F6684E626A47A85003C228C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F6684EE26A47A86003C228C /* PBXTargetDependency */,
+			);
+			name = SIXT_RideShareUITests;
+			productName = SIXT_RideShareUITests;
+			productReference = 5F6684E826A47A85003C228C /* SIXT_RideShareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5F6684F926A486F4003C228C /* SIXT_RideShareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F66850126A486F4003C228C /* Build configuration list for PBXNativeTarget "SIXT_RideShareTests" */;
+			buildPhases = (
+				5F6684F626A486F4003C228C /* Sources */,
+				5F6684F726A486F4003C228C /* Frameworks */,
+				5F6684F826A486F4003C228C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F66850026A486F4003C228C /* PBXTargetDependency */,
+			);
+			name = SIXT_RideShareTests;
+			productName = SIXT_RideShareTests;
+			productReference = 5F6684FA26A486F4003C228C /* SIXT_RideShareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F66848F26A171E1003C228C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					5F66849626A171E1003C228C = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					5F6684E726A47A85003C228C = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 5F66849626A171E1003C228C;
+					};
+					5F6684F926A486F4003C228C = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 5F66849626A171E1003C228C;
+					};
+				};
+			};
+			buildConfigurationList = 5F66849226A171E1003C228C /* Build configuration list for PBXProject "SIXT_RideShare" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F66848E26A171E1003C228C;
+			packageReferences = (
+				5F6684B026A18733003C228C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				5F6684BA26A1995F003C228C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				5F6684CB26A408F6003C228C /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+			);
+			productRefGroup = 5F66849826A171E1003C228C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F66849626A171E1003C228C /* SIXT_RideShare */,
+				5F6684E726A47A85003C228C /* SIXT_RideShareUITests */,
+				5F6684F926A486F4003C228C /* SIXT_RideShareTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F66849526A171E1003C228C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6684A726A171E4003C228C /* LaunchScreen.storyboard in Resources */,
+				5F6684A426A171E4003C228C /* Assets.xcassets in Resources */,
+				5F6684F326A47DA9003C228C /* README.md in Resources */,
+				5F66850626A48C19003C228C /* Rides.json in Resources */,
+				5F6684A226A171E1003C228C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6684E626A47A85003C228C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6684F826A486F4003C228C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F66850526A48985003C228C /* Rides.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F66849326A171E1003C228C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6684CA26A3FBF0003C228C /* NetworkManager+RequestInterceptor.swift in Sources */,
+				5F6684C626A3FB4B003C228C /* NetworkManager.swift in Sources */,
+				5F6684D926A417ED003C228C /* TableDetailVC.swift in Sources */,
+				5F6684C826A3FBE9003C228C /* EventMonitor.swift in Sources */,
+				5F6684DB26A4572B003C228C /* RidesListTableView.swift in Sources */,
+				5F6684AF26A184BA003C228C /* RideView.swift in Sources */,
+				5F6684BE26A19F40003C228C /* RideCell.swift in Sources */,
+				5F6684DD26A45750003C228C /* RidesMapView.swift in Sources */,
+				5F6684B926A196EA003C228C /* RideModel.swift in Sources */,
+				5F66849B26A171E1003C228C /* AppDelegate.swift in Sources */,
+				5F6684F526A4848C003C228C /* extractAnnotationsViewModel.swift in Sources */,
+				5F66849D26A171E1003C228C /* SceneDelegate.swift in Sources */,
+				5F6684B726A19062003C228C /* RideAPI.swift in Sources */,
+				5F6684C226A34337003C228C /* CustomAnnotationView.swift in Sources */,
+				5F6684C026A1F800003C228C /* CustomAnnotation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6684E426A47A85003C228C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6684EB26A47A86003C228C /* SIXT_RideShareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6684F626A486F4003C228C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6684FD26A486F4003C228C /* SIXT_RideShareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F6684EE26A47A86003C228C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F66849626A171E1003C228C /* SIXT_RideShare */;
+			targetProxy = 5F6684ED26A47A86003C228C /* PBXContainerItemProxy */;
+		};
+		5F66850026A486F4003C228C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F66849626A171E1003C228C /* SIXT_RideShare */;
+			targetProxy = 5F6684FF26A486F4003C228C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F6684A026A171E1003C228C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F6684A126A171E1003C228C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F6684A526A171E4003C228C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F6684A626A171E4003C228C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F6684A926A171E4003C228C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F6684AA26A171E4003C228C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F6684AC26A171E4003C228C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TTH7P953CP;
+				INFOPLIST_FILE = SIXT_RideShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gharari.SIXT-RideShare";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5F6684AD26A171E4003C228C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TTH7P953CP;
+				INFOPLIST_FILE = SIXT_RideShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gharari.SIXT-RideShare";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5F6684F026A47A86003C228C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TTH7P953CP;
+				INFOPLIST_FILE = SIXT_RideShareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gharari.SIXT-RideShareUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SIXT_RideShare;
+			};
+			name = Debug;
+		};
+		5F6684F126A47A86003C228C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TTH7P953CP;
+				INFOPLIST_FILE = SIXT_RideShareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gharari.SIXT-RideShareUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SIXT_RideShare;
+			};
+			name = Release;
+		};
+		5F66850226A486F4003C228C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TTH7P953CP;
+				INFOPLIST_FILE = SIXT_RideShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gharari.SIXT-RideShareTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SIXT_RideShare.app/SIXT_RideShare";
+			};
+			name = Debug;
+		};
+		5F66850326A486F4003C228C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TTH7P953CP;
+				INFOPLIST_FILE = SIXT_RideShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gharari.SIXT-RideShareTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SIXT_RideShare.app/SIXT_RideShare";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F66849226A171E1003C228C /* Build configuration list for PBXProject "SIXT_RideShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F6684A926A171E4003C228C /* Debug */,
+				5F6684AA26A171E4003C228C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F6684AB26A171E4003C228C /* Build configuration list for PBXNativeTarget "SIXT_RideShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F6684AC26A171E4003C228C /* Debug */,
+				5F6684AD26A171E4003C228C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F6684EF26A47A86003C228C /* Build configuration list for PBXNativeTarget "SIXT_RideShareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F6684F026A47A86003C228C /* Debug */,
+				5F6684F126A47A86003C228C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F66850126A486F4003C228C /* Build configuration list for PBXNativeTarget "SIXT_RideShareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F66850226A486F4003C228C /* Debug */,
+				5F66850326A486F4003C228C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F6684B026A18733003C228C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		5F6684BA26A1995F003C228C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+		5F6684CB26A408F6003C228C /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F6684B126A18733003C228C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F6684B026A18733003C228C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		5F6684BB26A1995F003C228C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F6684BA26A1995F003C228C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		5F6684CC26A408F6003C228C /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F6684CB26A408F6003C228C /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		5F6684CE26A408F6003C228C /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F6684CB26A408F6003C228C /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5F66848F26A171E1003C228C /* Project object */;
+}
